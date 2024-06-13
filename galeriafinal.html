@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>FUNDACIÓN NYA</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="icono2.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta name="theme-color" content="#fafafa">
+</head>
+<Style>
+  .navbar-nav .nav-link {
+    color: rgb(7, 7, 7);
+    /* Cambia el color del texto del menú aquí */
+  }
+
+  .navbar {
+    background-color: transparent;
+    /* Hacer que el fondo del menú sea transparente */
+  }
+
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Cambia el fondo del botón del menú desplegable */
+  }
+
+  .navbar-nav .nav-link {
+    color: rgb(7, 7, 7);
+    /* Cambia el color del texto del menú aquí */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #000000;
+    /* Cambia el color del texto al hacer hover en el menú aquí */
+  }
+
+  .navbar {
+    background-image: url('img/fondo\ blureado.png');
+    /* Agrega el GIF como fondo del menú */
+    background-size: cover;
+    /* Ajusta el tamaño del fondo */
+  }
+
+  .section-title {
+    /*Style para el parrafo*/
+    font-family: Verdana;
+    color: #333;
+    border: 10px black;
+  }
+
+  section {
+    max-inline-size: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  section:hover .icon2 {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+</Style>
+
+
+<Body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+
+        <div class="logo">
+          <img src="img/archivo de el ultimo logo23.png" alt="">
+        </div>
+
+
+        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">INICIO </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactenos.html">CONTACTANOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acercade.html">ACERCA DE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donaciones.html">DONACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeriafinal.html">GALERIA</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <center>
+    <h2 class="ban"
+      style="background-color: #22314a; color: #f2f2f2; padding: 20px; border-radius: 20px; inline-size: max-content; margin-block-start: 40px;">
+      <span>Bienvenidos a Nuestra Galeria!</span>
+    </h2>
+  </center>
+
+  <section>
+    <h3 style="text-align: left;">Capurando Sonrisas</h3>
+    <p style="font-size: large; font-family: 'Quicksand', sans-serif; text-align: justify;">
+      En esta galería, nos complace destacar las impactantes contribuciones de la Fundación NYA en su incansable
+      esfuerzo por mejorar la vida de niños y adultos en situaciones vulnerables. A través de programas innovadores y
+      una dedicación inquebrantable, la Fundación NYA ha sido un faro de esperanza y apoyo, brindando ayuda tangible y
+      creando oportunidades para un futuro más brillante para aquellos que más lo necesitan.
+
+    </p>
+    <img class="icon" src="img/niños y adultos mayores.png" alt="Avión Icono">
+
+  </section>
+
+
+  <style>
+    .gallery {
+      padding: 0 20px;
+      /* Ajusta el valor de 20px según el espacio que desees */
+
+    }
+
+    #expandedImageContainer {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #closeButton {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    #expandedImage {
+      max-width: 80%;
+      max-height: 80%;
+      margin: auto;
+      margin-top: 5%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #expandedImageContainer.show {
+      display: block;
+      opacity: 1;
+    }
+
+    #expandedImage.show {
+      opacity: 1;
+    }
+
+    .image img {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image:hover img {
+      transform: scale(1.1);
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      /* Styles for screens smaller than 768px */
+      .section {
+        max-width: 90vw;
+      }
+
+      .image {
+        flex: 0 0 50%;
+        /* Adjust image width for smaller screens */
+      }
+
+      body {
+        font-size: 16px;
+      }
+
+      /* Styles for screens smaller than 768px */
+      @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+
+        .image {
+          width: 100%;
+          /* Ensure image scales to fit container */
+        }
+      }
+
+    }
+  </style>
+
+
+  <center>
+    <h2 class="ban"
+      style="background-color: #22314a; color: #f2f2f2; padding: 20px; border-radius: 20px; inline-size: max-content; margin-block-start: 40px;">
+      <span>Galeria de Fotos</span>
+    </h2>
+  </center>
+
+
+  <div class="gallery">
+    <div class="row" style="margin-top: 30px;">
+      <div class="image"><img src="img/1.jpg" alt="Imagen 1" onclick="expandImage('img/1.jpg')"
+          style="border-radius: 20px;" /></div>
+      <div class="image"><img src="img/2.jpg" alt="Imagen 2" onclick="expandImage('img/2.jpg')"
+          style="border-radius: 20px;" /></div>
+      <div class="image"><img src="img/3.jpg" alt="Imagen 3" onclick="expandImage('img/3.jpg')"
+          style="border-radius: 20px;" /></div>
+    </div>
+    <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+      <div class="image"><img src="img/1.jpg" alt="Imagen 1" onclick="expandImage('img/1.jpg')"
+          style="border-radius: 20px;" /></div>
+      <div class="image"><img src="img/2.jpg" alt="Imagen 2" onclick="expandImage('img/2.jpg')"
+          style="border-radius: 20px;" /></div>
+      <div class="image"><img src="img/3.jpg" alt="Imagen 3" onclick="expandImage('img/3.jpg')"
+          style="border-radius: 20px;" /></div>
+    </div>
+    <center>
+      <h2 class="ban"
+        style="background-color: #22314a; color: #f2f2f2; padding: 20px; border-radius: 20px; inline-size: max-content; margin-block-start: 40px;">
+        <span>Galeria de Videos en YouTube</span>
+      </h2>
+    </center>
+    <div class="row" style="margin-top: 30px;">
+      <div class="image">
+        <a href="https://youtu.be/3yNZRDQKlvU" target="_blank">
+          <img src="https://img.youtube.com/vi/3yNZRDQKlvU/mqdefault.jpg" alt="Miniatura 1"
+            style="border-radius: 20px;" />
+        </a>
+        <p style="font-family: Arial, sans-serif; font-size: 18px; text-align: center;"> <br> Descripción del primer
+          video</p>
+      </div>
+      <div class="image">
+        <a href="https://www.youtube.com/watch?v=SAanjJTsENs" target="_blank">
+          <img src="https://img.youtube.com/vi/SAanjJTsENs/mqdefault.jpg" alt="Miniatura 2"
+            style="border-radius: 20pwx;" />
+        </a>
+        <p style="font-family: Arial, sans-serif; font-size: 18px; text-align: center;"> <br> Descripción del segundo
+          video</p>
+      </div>
+      <div class="image">
+        <a href="https://www.youtube.com/watch?v=SbYa7NBYyRc" target="_blank">
+          <img src="https://img.youtube.com/vi/EE113T1OLQE/mqdefault.jpg" alt="Miniatura 3"
+            style="border-radius: 20px;" />
+        </a>
+        <p style="font-family: Arial, sans-serif; font-size: 18px; text-align: center;"> <br> Descripción del tercer
+          video</p>
+      </div>
+    </div>
+
+  </div>
+  <br><br>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Contacto</h3>
+        <p>Dirección: <a href="https://maps.app.goo.gl/aqndkmt9o2SRWmQK8">Calle 29 A, Barrio Cordoba, San Jose</a></p>
+        <p>Teléfono: <a href="tel:+50622522142">2252-2142</a></p>
+        <p>Correo Electrónico: <a href="mailto:infofundacionnya@gmail.com">infofundacionnya@gmail.com</a></p>
+      </div>
+      <div class="footer-social">
+        <h3>Síguenos</h3>
+        <ul>
+          <a href="https://www.tiktok.com/@user5286135876799">
+            <img src="img/Tik Tok logo.png" width="35" height="35">
+          </a>
+          <a href="https://www.instagram.com/fundacion_nya/">
+            <img src="img/Instagram logo.png" width="35" height="35">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61552366882692">
+            <img src="img/Facebook logo.png" width="35" height="35">
+          </a>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <img src="img/archivo de el ultimo logo23.png" alt="Logo de NYA">
+      </div>
+      <div class="footer-donate">
+        <h3>Donaciones</h3>
+        <p>Ayúdanos a hacer el bien. ¡Tu donación importa!</p>
+        <button class="btn-donate" onclick="redirigirADonaciones()">Donar Ahora</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 FUNDACIÓN NYA. Todos los derechos reservados.</p>
+    </div>
+    <script>
+      function redirigirADonaciones() {
+        window.location.href = 'donaciones.html';
+      }
+
+    </script>
+  </footer>
+
+
+  <div id="expandedImageContainer" onclick="hideExpandedImage()">
+    <span id="closeButton" onclick="hideExpandedImage()">&times;</span>
+    <div id="prevButton" onclick="prevImage()">&#10094;</div>
+    <img id="expandedImage" />
+    <div id="nextButton" onclick="nextImage()">&#10095;</div>
+  </div>
+
+  <Script>
+    var currentImageIndex = 0;
+    var images = [
+      "img/1.jpg",
+      "img/2.jpg",
+      "img/3.jpg",
+      "img/1.jpg",
+      "img/2.jpg",
+      "img/3.jpg"
+    ];
+
+    function expandImage(src) {
+      var expandedImage = document.getElementById("expandedImage");
+      expandedImage.src = src;
+      var expandedImageContainer = document.getElementById("expandedImageContainer");
+      expandedImageContainer.classList.add("show");
+      expandedImage.classList.add("show");
+    }
+
+    function hideExpandedImage() {
+      var expandedImageContainer = document.getElementById("expandedImageContainer");
+      expandedImageContainer.classList.remove("show");
+      var expandedImage = document.getElementById("expandedImage");
+      expandedImage.classList.remove("show");
+    }
+
+    function prevImage() {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      var expandedImage = document.getElementById("expandedImage");
+      expandedImage.src = images[currentImageIndex];
+      updateNavigationButtons();
+    }
+
+    function nextImage() {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      var expandedImage = document.getElementById("expandedImage");
+      expandedImage.src = images[currentImageIndex];
+      updateNavigationButtons();
+    }
+
+    function updateNavigationButtons() {
+      var prevButton = document.getElementById("prevButton");
+      var nextButton = document.getElementById("nextButton");
+      prevButton.style.display = currentImageIndex === 0 ? "none" : "block";
+      nextButton.style.display = currentImageIndex === images.length - 1 ? "none" : "block";
+    }
+    function highlightGallery() {
+      document.getElementById('gallery').style.zIndex = '1'; // Resaltar la galería de fotos
+      document.getElementById('video-gallery').style.zIndex = '0'; // Poner la galería de videos en segundo plano
+    }
+
+
+  </Script>
+
+  <Style>
+    .gallery {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .image {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .image:last-child {
+      margin-right: 0;
+    }
+
+    .image img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </Style>
+</Body>
+
+</html>

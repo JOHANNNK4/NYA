@@ -1,0 +1,560 @@
+<html>
+
+<html class="no-js" lang="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+    <title>Acerca De</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="icono2.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+
+<style>
+    .card {
+        font-family: 'TUI FONT NAME', sans-serif;
+
+        inline-size: 30rem;
+        padding: 20px;
+        border: 8px solid #22314a;
+        border-radius: 20px;
+        margin-block-start: 20px;
+        margin-block-end: 20px;
+        background-color: #22314a;
+        color: white;
+    }
+
+    .map-container {
+        margin-block-start: 90px;
+        padding: 0;
+        border: none;
+    }
+
+    .navbar-nav .nav-link {
+        color: rgb(7, 7, 7);
+        /* Cambia el color del texto del menú aquí */
+    }
+
+    .navbar {
+        background-color: transparent;
+        /* Hacer que el fondo del menú sea transparente */
+    }
+
+    .navbar-toggler {
+        background-color: rgba(255, 255, 255, 0.5);
+        /* Cambia el fondo del botón del menú desplegable */
+    }
+
+    .navbar-nav .nav-link {
+        color: rgb(7, 7, 7);
+        /* Cambia el color del texto del menú aquí */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #000000;
+        /* Cambia el color del texto al hacer hover en el menú aquí */
+    }
+
+    .navbar {
+        background-image: url('img/fondo\ blureado.png');
+        /* Agrega el GIF como fondo del menú */
+        background-size: cover;
+        /* Ajusta el tamaño del fondo */
+    }
+
+    /* Hacer que la imagen del banner sea responsive */
+    .test img {
+        block-size: auto;
+    }
+
+    /* Estilos CSS para el formulario */
+    .card {
+        font-family: 'TUI FONT NAME', sans-serif;
+        max-inline-size: 100%;
+        padding: 20px;
+        border: 8px solid #22314a;
+        border-radius: 20px;
+        margin-block-start: 20px;
+        margin-block-end: 20px;
+        background-color: #22314a;
+        color: white;
+    }
+
+    /* Asegurarse de que el mapa sea responsive */
+    .map-container {
+        margin-block-start: 90px;
+        padding: 0;
+        border: none;
+    }
+
+    #mapid {
+        inline-size: 100%;
+        block-size: 325px;
+        margin-block-end: 60px;
+    }
+    .card6 {
+      background-color: #22314A;
+      border-width: 90px;
+      border-radius: 30px;
+      font-family: 'TUI FONT NAME', sans-serif;
+     max-inline-size: 130%;
+     padding: 20px;
+     border: 8px solid #e2e2e2;
+     border-radius: 100px;
+     margin-block-start: 20px;
+     margin-block-end: 20px;
+     background-color: #e2e2e2;
+     color: white;
+      
+
+
+
+
+
+    }
+    .custom-container {
+      background-color: #f2f2f2;
+      border-radius: 20px;
+      margin-top: 30px;
+      padding: 20px;
+      text-align: justify;
+      max-width: 1300px; /* Ajusta el ancho máximo según tus necesidades */
+      margin: 0 auto; /* Centrar el container en la página */
+    }
+
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+      /* Ajustar estilos para pantallas pequeñas */
+      .custom-container {
+        border-radius: 0;
+      }
+    }
+</style>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+       
+      
+        <div class="logo">
+          <img src="img/archivo de el ultimo logo23.png" alt="">
+        </div>
+        
+
+        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">INICIO </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactenos.html">CONTACTANOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acercade.html">ACERCA DE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donaciones.html">DONACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeriafinal.html">GALERIA</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="test">
+
+    <h2 class="ban" style="background-color: #22314a; color: #f2f2f2; padding: 30px; border-radius: 40px; width: fit-content; margin-top: 20px;">
+      <span style="font-family: Verdana, Geneva, Tahoma, sans-serif;">¿Deseas formar parte de nosotros o contriubuir con tu donacion?</span>
+    </h2>
+  </div>
+
+  <style>
+ 
+ 
+
+    .container2 {
+        max-width: 1100px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+   
+
+
+    .image-container2 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container2">
+    <h2 style="text-align: center; font-size: xx-large;">Unidos por Costa Rica</h2>
+    <p>Nuestra labor no sería posible sin la solidaridad y la colaboración de individuos, empresas y organizaciones que
+      comparten nuestra visión. Los invitamos a unirse a nosotros en este noble propósito, ya sea a través de donaciones,
+      voluntariado o apoyo a nuestros programas. Cada pequeño gesto de generosidad nos acerca más a un Costa Rica donde
+      ningún niño se quede atrás y ningún adulto mayor se sienta solo o desamparado.</p>
+    <p>La Fundación NYA está comprometida a ser un faro de esperanza en medio de la adversidad, y a seguir brindando amor,
+      apoyo y oportunidades a los que más lo necesitan. Creemos en un futuro más brillante y prometedor para todos, y
+      juntos, haremos que ese futuro sea una realidad.</p>
+    
+    <div class="image-container2">
+        <center><img src="img/manoyco.png" alt="Descripción de la imagen 1"></center>
+     
+    </div>
+</div>
+<body bgcolor="white" background="Imagenes">
+   
+    
+   
+    <div class="test">
+
+        <h2 class="ban" style="background-color: #22314a; color: #f2f2f2; padding: 30px; border-radius: 20px; width: fit-content; margin-top: 40px; margin-bottom: 40px;">
+          <span style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Unete a Nosotros</span>
+        </h2>
+      </div>
+
+      <form method="post" action="https://formspree.io/f/mjvqqrjk">
+        <div class="container">
+          <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+              <h2>Voluntariado</h2>
+              <input type="text" class="field" name="nombre" placeholder="Nombre">
+              <input type="text" class="field" name="profesion" placeholder="Profesión">
+              <input type="email" class="field" name="correo" placeholder="Correo Electrónico">
+              <input type="text" class="field" name="telefono" placeholder="Teléfono">
+              <button type="submit" class="btn">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:  sans-serif;
+
+        }
+
+        body {
+            inline-size: 100%;
+            block-size: 50%;
+
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            inline-size: 100%;
+            block-size: 100%;
+            padding: 20px 100px;
+        }
+
+        .container:after {
+            content: '';
+            position: absolute;
+            inset-inline-start: 0;
+            inset-block-start: 0;
+            inline-size: 100%;
+            block-size: 100%;
+            background: url("img/fondo\ voluntariado.png") no-repeat center;
+            border-radius: 20px;
+            background-size: cover;
+            z-index: -1;
+            
+
+
+
+        }
+
+        .contact-box {
+            max-inline-size: 850px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+        }
+
+        .left {
+            block-size: 100%;
+            background: url("img/archivo\ de\ el\ ultimo\ logo23.png") no-repeat center;
+            background-size: cover;
+        }
+
+        .right {
+            padding: 25px 40px;
+        }
+
+        h2 {
+            position: relative;
+            padding-block-end: 10px;
+            margin-block-end: 10px;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            inset-inline-start: 50%;
+            inset-block-end: 0;
+            transform: translateX(-50%);
+            block-size: 4px;
+            inline-size: 50px;
+            border-radius: 2px;
+            background-color: #22314A;
+        }
+
+        .field {
+            inline-size: 100%;
+            padding: 0.5rem 1rem;
+            outline: none;
+            border: 2px solid rgba(0, 0, 0, 0);
+            background-color: rgba(230, 230, 230, 0.6);
+            font-size: 1.1rem;
+            margin-block-end: 22px;
+            transition: .3s;
+        }
+
+        .field:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .field:focus {
+            background-color: #fff;
+            border: 2px solid rgba(30, 85, 250, 0.47);
+        }
+
+        .area {
+            min-block-size: 150px;
+        }
+
+        .btn {
+            inline-size: 100%;
+            padding: 0.5rem 1rem;
+            font-size: 1.1rem;
+            background-color: #3A8F48;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            color: #fff;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background-color: #3A8F48;
+
+        }
+
+        @media screen and (max-inline-size:880px) {
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+
+            .left {
+                block-size: 200px;
+            }
+        }
+    </style>
+
+<style>
+  .card {
+    background-color: lightblue;
+    margin-top: 20px; /* Reduje el margen para mejorar la apariencia */
+  }
+
+  /* Añadí un estilo personalizado para cambiar el color de fondo de la última tarjeta */
+  .card:last-child {
+    background-color: rgb(247, 247, 247);
+    border-color: red;
+  }
+</style>
+<div class="test">
+
+    <h2 class="ban" style="background-color: #22314a; color: #f2f2f2; padding: 30px; border-radius: 20px; width: fit-content; margin-top: 60px;">
+      <span style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Bancos a los cuales puedes enviar tu ayuda</span>
+    </h2>
+  </div>
+<title>Tarjetas Bootstrap Responsive</title>
+</head>
+<body>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mi-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.mi-card {
+    width: 300px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mi-card:hover {
+    transform: scale(1.05);
+}
+
+.mi-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.mi-card h2 {
+    color: #333;
+}
+
+.mi-card p {
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    .mi-card {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="mi-container">
+<div class="mi-card">
+<img src="img/logo_banco-nacional.png" alt="Imagen 1">
+<h2>Cuenta</h2>
+<p>XXX-XXXX-XXXX</p>
+</div>
+
+<div class="mi-card">
+<img src="img/logo_bacredomatic.png" alt="Imagen 2">
+<h2>Cuenta</h2>
+<p>XXX-XXXX-XXXX</p>
+</div>
+
+<div class="mi-card">
+<img src="img/BCR no fondo.png" alt="Imagen 3">
+<h2>Cuenta</h2>
+<p>XXX-XXXX-XXXX</p>
+</div>
+</div>
+
+
+
+    <hr style="background-color: #000000; block-size: 2px; margin-block-start: 30px; margin-block-end: 30px;">
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Contacto</h3>
+                <p>Dirección: <a href="https://maps.app.goo.gl/aqndkmt9o2SRWmQK8">Calle 29 A, Barrio Cordoba, San Jose</a></p>
+                <p>Teléfono: <a href="tel:+50622522142">2252-2142</a></p>
+                <p>Correo Electrónico: <a href="mailto:infofundacionnya@gmail.com">infofundacionnya@gmail.com</a></p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <ul>
+                    <a href="https://www.tiktok.com/@user5286135876799">
+                        <img src="img/Tik Tok logo.png" width="35" height="35">
+                    </a>
+                    <a href="https://www.instagram.com/fundacion_nya/">
+                        <img src="img/Instagram logo.png" width="35" height="35">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61552366882692">
+                        <img src="img/Facebook logo.png" width="35" height="35">
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="img/archivo de el ultimo logo23.png" alt="Logo de NYA">
+            </div>
+            <div class="footer-donate">
+                <h3>Donaciones</h3>
+                <p>Ayúdanos a hacer el bien. ¡Tu donación importa!</p>
+                <button class="btn-donate"> Donar Ahora</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 FUNDACIÓN NYA. Todos los derechos reservados.</p>
+        </div>
+</body>
+</html>

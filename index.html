@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>FUNDACIÓN NYA</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="icono2.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<style>
+  .card {
+    font-family: 'TUI FONT NAME', sans-serif;
+
+    inline-size: 30rem;
+    padding: 20px;
+    border: 8px solid #22314a;
+    border-radius: 20px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    background-color: #22314a;
+    color: white;
+  }
+
+  .map-container {
+    margin-block-start: 90px;
+    padding: 0;
+    border: none;
+  }
+
+  .navbar-nav .nav-link {
+    color: rgb(7, 7, 7);
+    /* Cambia el color del texto del menú aquí */
+  }
+
+  .navbar {
+    background-color: transparent;
+    /* Hacer que el fondo del menú sea transparente */
+  }
+
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Cambia el fondo del botón del menú desplegable */
+  }
+
+  .navbar-nav .nav-link {
+    color: rgb(7, 7, 7);
+    /* Cambia el color del texto del menú aquí */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #000000;
+    /* Cambia el color del texto al hacer hover en el menú aquí */
+  }
+
+  .navbar {
+    background-image: url('img/fondo\ blureado.png');
+    /* Agrega el GIF como fondo del menú */
+    background-size: cover;
+    /* Ajusta el tamaño del fondo */
+  }
+
+  /* Hacer que la imagen del banner sea responsive */
+  .test img {
+    block-size: auto;
+  }
+
+  /* Estilos CSS para el formulario */
+  .card {
+    font-family: 'TUI FONT NAME', sans-serif;
+    max-inline-size: 100%;
+    padding: 20px;
+    border: 8px solid#e2e2e2;
+    border-radius: 20px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    background-color: #084cac;
+    color: white;
+  }
+
+  .card {
+    font-family: 'TUI FONT NAME', sans-serif;
+    max-inline-size: 100%;
+    padding: 20px;
+    border: 8px solid #084cac;
+    border-radius: 20px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    background-color: #084cac;
+    color: white;
+  }
+
+  .card222 {
+    font-family: 'TUI FONT NAME', sans-serif;
+    max-inline-size: 100%;
+    padding: 20px;
+    border: 8px solid #e2e2e2;
+    border-radius: 20px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    background-color: #e2e2e2;
+    color: white;
+  }
+
+  /* Asegurarse de que el mapa sea responsive */
+  .map-container {
+    margin-block-start: 90px;
+    padding: 0;
+    border: none;
+  }
+
+  #mapid {
+    inline-size: 100%;
+    block-size: 325px;
+    margin-block-end: 60px;
+  }
+
+  .row {
+    font-family: 'TUI FONT NAME', sans-serif;
+    max-inline-size: 130%;
+    padding: 20px;
+    border: 8px solid #e2e2e2;
+    border-radius: 100px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    background-color: #e2e2e2;
+    color: white;
+
+  }
+
+
+
+
+  .btn-donate2 {
+    background-color: rgb(110, 184, 206);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-donate2:hover {
+    animation: colorChange 5s infinite;
+  }
+
+  @keyframes colorChange {
+    0% {
+      background-color: rgb(110, 184, 206);
+    }
+
+    25% {
+      background-color: #66ff66;
+    }
+
+    50% {
+      background-color: #1e90ff;
+    }
+
+    75% {
+      background-color: #ff69b4;
+    }
+
+    100% {
+      background-color: #ff6347;
+    }
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 9:16 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+  }
+
+  .card9-body {
+    text-align: center;
+  }
+
+  section {
+    background-color: rgb(226, 226, 226);
+    border-radius: 80px;
+  }
+
+  .video-container {
+    border-radius: 80px;
+    overflow: hidden;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    /* Adjust styles for small screens */
+    .video-container {
+      border-radius: 0;
+      /* Set border-radius to 0 for small screens */
+    }
+  }
+
+</style>
+
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+
+        <div class="logo">
+          <img src="img/archivo de el ultimo logo23.png" alt="">
+        </div>
+
+
+        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">INICIO </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactenos.html">CONTACTANOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acercade.html">ACERCA DE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donaciones.html">DONACIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeriafinal.html">GALERIA</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <script src="script.js"></script>
+
+
+  </center>
+
+  
+
+  <div class="test">
+
+    <h2 class="ban"
+      style="background-color: #22314a; color: #f2f2f2; padding: 30px; border-radius: 20px; width: fit-content; margin-top: 20px;">
+      <span>¿Cual es la Mision y Vision de Fundacion NYA?</span>
+    </h2>
+  </div>
+
+
+  <div class="container" style="border-color: #084cac;">
+    <div class="row justify-content-center"
+      style="background-color: #084cac; border-color: #084cac; border-radius: 90px;">
+      <div class="col-md-6" style="background-color: #084cac;">
+        <div class="card" style="width: 100%; margin-bottom: 20px; inline-size: 90rem">
+          <img class="card-img-top" src="IMG/NUESTRA VISION.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style=" font-family: Arial, Helvetica, sans-serif;font-size: large;">Queremos ser una organizacion reconocida por el impacto en nuestras actuaciones en el
+              bienestar y el desarrollo de las comunidades con las que trabajamos, asi como por nuestra integridad y
+              profesionalidad en el modo de actuar</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" style="border-radius: 90px;">
+        <div class="card" style="width: 100%; margin-bottom: 20px; inline-size: 90rem">
+          <img class="card-img-top" src="img/NUESTRA MISION.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text" style="font-family: Arial, Helvetica, sans-serif;font-size: large;">Mejorar la calidad de vida de niños y adultos en estado de vulnerabilidad o
+              riesgo y contribuir a mejorar su calidad de vida, unidos por el compromiso de realizar un trabajo de
+              calidad fundado en el respeto a las personas y en la creencia de que se puede construir una sociedad más
+              justa y solidaria.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="test">
+
+      <h2 class="ban"
+        style="background-color: #22314a; color: #f2f2f2; padding: 30px; border-radius: 20px; width: fit-content; margin-top: 20px;">
+        <span>Te damos la Bienvenida a la Fundacion NYA</span>
+      </h2>
+    </div>
+
+    <div class="card9-body">
+      <section>
+        <div class="video-container">
+          <video width="100%" height="auto" controls autoplay>
+            <source src="Video Final.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+        </div>
+      </section>
+    </div>
+
+
+
+
+
+    <div class="test">
+
+      <h2 class="ban"
+        style="background-color: #22314a; color: #f2f2f2; padding: 30px; border-radius: 20px; width: fit-content; margin-top: 40px;">
+        <span>¿Deseas formar parte de nosotros o contriubuir con tu donacion?</span>
+      </h2>
+    </div>
+
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card222" style="width: 100%; margin-bottom: 20px; inline-size: 30rem">
+          <img class="card-img-top" src="img/Agregar un título5.png" alt="Card image cap">
+          <div class="card-body text-center d-flex align-items-center justify-content-center">
+            <button class="btn btn-donate2 btn-lg" onclick="redirigirADonaciones()">Forma Parte de Nosotros</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card222" style="width: 100%; margin-bottom: 20px;margin-right: 20px; inline-size: 30rem">
+          <img class="card-img-top" src="img/apoyo bienvenido.png" alt="Card image cap">
+          <div class="card-body text-center d-flex flex-column align-items-center">
+            <p class="card-text text-dark">
+              <button class="btn btn-donate2 btn-lg" onclick="redirigirADonaciones()">Donar Ahora</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Contacto</h3>
+        <p>Dirección: <a href="https://maps.app.goo.gl/aqndkmt9o2SRWmQK8">Calle 29 A, Barrio Cordoba, San Jose</a></p>
+        <p>Teléfono: <a href="tel:+50622522142">2252-2142</a></p>
+        <p>Correo Electrónico: <a href="mailto:infofundacionnya@gmail.com">infofundacionnya@gmail.com</a></p>
+      </div>
+      <div class="footer-social">
+        <h3>Síguenos</h3>
+        <ul>
+          <a href="https://www.tiktok.com/@user5286135876799">
+            <img src="img/Tik Tok logo.png" width="35" height="35">
+          </a>
+          <a href="https://www.instagram.com/fundacion_nya/">
+            <img src="img/Instagram logo.png" width="35" height="35">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61552366882692">
+            <img src="img/Facebook logo.png" width="35" height="35">
+          </a>
+        </ul>
+      </div>
+      <div class="footer-logo">
+        <img src="img/archivo de el ultimo logo23.png" alt="Logo de NYA">
+      </div>
+      <div class="footer-donate">
+        <h3>Donaciones</h3>
+        <p>Ayúdanos a hacer el bien. ¡Tu donación importa!</p>
+        <button class="btn-donate" onclick="redirigirADonaciones()">Donar Ahora</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 FUNDACIÓN NYA. Todos los derechos reservados.</p>
+    </div>
+    <script>
+      function redirigirADonaciones() {
+        window.location.href = 'donaciones.html';
+      }
+
+    </script>
+  </footer>
+</body>
+
+</html>
