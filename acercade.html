@@ -1,0 +1,612 @@
+<html>
+
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Acerca De</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="icono2.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<style>
+  .card {
+    font-family: 'TUI FONT NAME', sans-serif;
+
+    inline-size: 30rem;
+    padding: 20px;
+    border: 8px solid #22314a;
+    border-radius: 20px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    background-color: #22314a;
+    color: white;
+  }
+
+  .map-container {
+    margin-block-start: 90px;
+    padding: 0;
+    border: none;
+  }
+
+  .navbar-nav .nav-link {
+    color: rgb(7, 7, 7);
+    /* Cambia el color del texto del menú aquí */
+  }
+
+  .navbar {
+    background-color: transparent;
+    /* Hacer que el fondo del menú sea transparente */
+  }
+
+  .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Cambia el fondo del botón del menú desplegable */
+  }
+
+  .navbar-nav .nav-link {
+    color: rgb(7, 7, 7);
+    /* Cambia el color del texto del menú aquí */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #000000;
+    /* Cambia el color del texto al hacer hover en el menú aquí */
+  }
+
+  .navbar {
+    background-image: url('img/fondo\ blureado.png');
+    /* Agrega el GIF como fondo del menú */
+    background-size: cover;
+    /* Ajusta el tamaño del fondo */
+  }
+
+  /* Hacer que la imagen del banner sea responsive */
+  .test img {
+    block-size: auto;
+  }
+
+  /* Estilos CSS para el formulario */
+  .card {
+    font-family: 'TUI FONT NAME', sans-serif;
+    max-inline-size: 100%;
+    padding: 20px;
+    border: 8px solid #22314a;
+    border-radius: 20px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    background-color: #22314a;
+    color: white;
+  }
+
+  /* Asegurarse de que el mapa sea responsive */
+  .map-container {
+    margin-block-start: 90px;
+    padding: 0;
+    border: none;
+  }
+
+  #mapid {
+    inline-size: 100%;
+    block-size: 325px;
+    margin-block-end: 60px;
+  }
+
+  #carouselExampleCaptions {
+    border-radius: 60px;
+    /* Ajusta el valor según el radio de redondeo que desees */
+    overflow: hidden;
+    /* Para asegurar que las esquinas redondeadas se vean correctamente */
+    inline-size: 20px;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+  }
+
+
+  .sct {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px;
+    min-block-size: 100vh;
+    background: #e2e2e2;
+    border-radius: 30px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    margin-block-end: 30px;
+    margin-inline-end: 30px;
+    text-align: center;
+    inline-size: none;
+    block-size: 20px;
+  }
+
+  .section-title {
+    font-family: Verdana;
+    color: #333;
+    border: 10px black;
+  }
+
+
+
+  .wrapper {
+    position: relative;
+    inline-size: 100%;
+    block-size: 10%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+
+  }
+
+  .carda {
+    position: relative;
+    inline-size: 420px;
+    block-size: 550px;
+    background: #000;
+    border: 10px black;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  }
+
+  .poster {
+    position: relative;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    overflow: hidden;
+
+  }
+
+  .poster::before {
+    content: '';
+    position: absolute;
+    inset-block-end: -45%;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    z-index: 1;
+    transition: .3s;
+  }
+
+  .carda:hover .poster::before {
+    inset-block-end: 0;
+  }
+
+  .poster img {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    transition: .3s;
+
+  }
+
+  .carda:hover .poster img {
+    transform: scale(1.1);
+  }
+
+  .details {
+    position: absolute;
+    inset-block-end: -100%;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: .3s;
+    color: #fff;
+    z-index: 2;
+  }
+
+  .carda:hover .details {
+    inset-block-end: 0;
+  }
+
+  .details h1,
+  .details h2 {
+    font-weight: 700;
+  }
+
+  .details h1 {
+    font-size: 1.5em;
+    margin-block-end: 5px;
+  }
+
+  .details h2 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-block-end: 10px;
+    opacity: .6;
+  }
+
+  .details .rating {
+    position: relative;
+    margin-block-end: 15px;
+    display: flex;
+    gap: .25em;
+  }
+
+  .details .rating i {
+    color: #e3c414;
+  }
+
+  .details .rating span {
+    margin-inline-start: 0.25em;
+  }
+
+  .details .tags {
+    display: flex;
+    gap: .375em;
+    margin-block-end: .875em;
+    font-size: .85em;
+  }
+
+  .details .tags span {
+    padding: .35rem .65rem;
+    color: #fff;
+    border: 1.5px solid rgba(255 255 255 / 0.4);
+    border-radius: 4px;
+    border-radius: 50px;
+  }
+
+  .details .desc {
+    color: #fff;
+    opacity: .8;
+    line-height: 1.5;
+    margin-block-end: 1em;
+  }
+
+  .details .cast h3 {
+    margin-block-end: .5em;
+  }
+
+  .details .cast ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    inline-size: 100%;
+  }
+
+  .details .cast ul li {
+    list-style: none;
+    inline-size: 55px;
+    block-size: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1.5px solid #000000;
+  }
+
+  .details .cast ul li img {
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  section {
+    max-inline-size: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  h2 {
+    color: #ffffff;
+  }
+
+  h5 {
+    size: 100;
+  }
+
+  p2 {
+    color: #666;
+  }
+
+  .icon {
+    inline-size: 100%;
+    block-size: auto;
+    margin-inline-end: 10px;
+  }
+
+  .icon2 {
+    max-inline-size: 100%;
+    block-size: auto;
+    margin-inline-end: 10px;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  .icon2 {
+    max-inline-size: 100%;
+    block-size: auto;
+    margin-inline-end: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  section:hover .icon2 {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+
+  h2:after {
+    content: '';
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-end: 0;
+    transform: translateX(-50%);
+    block-size: 4px;
+    inline-size: 50px;
+    border-radius: 2px;
+    background-color: red;
+  }
+</style>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <div class="logo">
+        <img src="img/archivo de el ultimo logo23.png" alt="">
+      </div>
+
+      <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">INICIO </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactenos.html">CONTACTANOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="acercade.html">ACERCA DE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="donaciones.html">DONACIONES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galeriafinal.html">GALERIA</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<div class="test">
+
+  <h2 class="ban"
+    style="background-color: #22314a; color: #f2f2f2; padding: 20px; border-radius: 20px; inline-size: max-content; margin-block-start: 40px;">
+    <span>Descubre Más Acerca de Nosotros</span>
+  </h2>
+
+</div>
+<section>
+  <h3 style="text-align: left;">Comprometidos con el bienestar</h3>
+  <p style="font-size: large; font-family: 'Quicksand', sans-serif; text-align: justify;"> 
+    Los servicios que Fundación NYA ofrece especialmente a la comunidad adulta y a la niñez, en campos de atención médica,
+    odontológica, escolar, insumos médicos, alimentación, abarcando desde una oferta de gestión integral como equipo de
+    titularidad de un centro, hasta el apoyo puntual en algún aspecto concreto de la gestión, como por ejemplo, comedores,
+    centros de ancianos, centros de cuido, centros escolares, hospitales.
+
+  </p>
+  <img class="icon" src="img/niños y adultos mayores.png" alt="Avión Icono">
+
+</section>
+<section>
+  <h3 style="text-align: left;">Forjando un Futuro Brillante</h3>
+  <p style="font-size: large; font-family: 'Quicksand', sans-serif; text-align: justify;"> 
+    La Fundación NYA es un rayo de esperanza que ilumina el camino hacia un futuro mejor para las generaciones presentes y
+    futuras. Nuestro compromiso con el bienestar de nuestra sociedad se manifiesta a través de una labor incansable y un
+    enfoque integral en la asistencia a dos de los segmentos más vulnerables de nuestra población: los niños y niñas,
+    quienes representan el futuro de nuestro país, y los adultos mayores, quienes han dedicado sus vidas a construir la
+    nación que hoy conocemos.
+
+  </p>
+  <img class="icon" src="img/Bienestar.png" alt="Avión Icono">
+
+</section>
+<section>
+  <h3 style="text-align: left;">Transformando Desafíos en Oportunidades</h3>
+  <p style="font-size: large; font-family: 'Quicksand', sans-serif; text-align: justify;"> 
+    En un mundo en constante cambio y desafío, es nuestra responsabilidad unirnos y ofrecer apoyo, amor y oportunidades a
+    aquellos que enfrentan dificultades. En la Fundación NYA, creemos que cada niño, niña y adulto mayor merece una vida de
+    dignidad, respeto y cariño. Trabajaremos incansablemente para lograr esto a través de proyectos educativos, de atención
+    médica, recreativos y culturales, así como programas de acompañamiento y apoyo emocional.
+
+  </p>
+  <img class="icon" src="img/Proyecto ninos.png" alt="Avión Icono">
+
+</section>
+<section style="font-size: larger;font-family: 'Quicksand', sans-serif; text-align: center;">
+  <h3 style="font-size: larger;">Valores de Fundacion NYA</h3>
+  <section style="background-color: #c3e6e9;"><img class="icon2" src="img/Humanismo.png" alt="valor"></section>
+  <section style="background-color: #e2e2e2;"><img class="icon2" src="img/Lealtad.png" alt="valor"><!-- aqui va la info -->
+  </section>
+  <section style="background-color: #DAF7A6;"><img class="icon2" src="img/Empatia.png" alt="valor"></section>
+
+
+</section>
+
+
+
+
+
+<body bgcolor="white" background="Imagenes">
+
+  <font size="6" face="verdana" color="black">
+
+  </font>
+
+
+  <center>
+    <h2 class="ban"
+      style="background-color: #22314a; color: #f2f2f2; padding: 20px; border-radius: 20px; inline-size: max-content; margin-block-start: 40px;">
+      <span>Nuestra Jerarquia</span>
+    </h2>
+  </center>
+
+
+
+  <div class="card"
+    style="inline-size: 100rem; font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: #f1f1f1; border-color: #f1f1f1; border-radius: 80px;">
+    <center>
+
+    </center>
+    <div class="wrapper">
+      <div class="carda">
+        <div class="poster"><img src="img/johann.JPG" alt="Location Unknown"></div>
+        <div class="details">
+          <h1>Lic. Johann Jiménez Jara</h1>
+
+
+          <p class="desc">
+            Presidente de Fundación NYA
+            <br> Abogado y Notario Público
+          </p>
+
+        </div>
+      </div>
+      <div class="carda">
+        <div class="poster"><img src="img/William.JPG" alt="Location Unknown"></div>
+        <div class="details">
+          <h1>Lic. William Hidalgo</h1>
+
+
+          <p class="desc">
+            Licenciado en derecho
+            <br>Empresario / Gerente de compañia de Decoraciones Sueños Europeos
+          </p>
+
+        </div>
+      </div>
+      <div class="carda">
+        <div class="poster"><img src="img/javier.JPG" alt="Location Unknown"></div>
+        <div class="details">
+          <h1>Lic. Javier Redondo Garro</h1>
+
+
+          <p class="desc">
+            Departamento de Tesoreria y Finanzas
+            <br> Licenciado en Gestion Financiera
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <body bgcolor="white" background="Imagenes">
+
+    <font size="6" face="verdana" color="black">
+
+    </font>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+      </script>
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments)
+      };
+      ga.q = [];
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview')
+
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Contacto</h3>
+          <p>Dirección: <a href="https://maps.app.goo.gl/aqndkmt9o2SRWmQK8">Calle 29 A, Barrio Cordoba, San Jose</a></p>
+          <p>Teléfono: <a href="tel:+50622522142">2252-2142</a></p>
+          <p>Correo Electrónico: <a href="mailto:infofundacionnya@gmail.com">infofundacionnya@gmail.com</a></p>
+        </div>
+        <div class="footer-social">
+          <h3>Síguenos</h3>
+          <ul>
+            <a href="https://www.tiktok.com/@user5286135876799">
+              <img src="img/Tik Tok logo.png" width="35" height="35">
+            </a>
+            <a href="https://www.instagram.com/fundacion_nya/">
+              <img src="img/Instagram logo.png" width="35" height="35">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61552366882692">
+              <img src="img/Facebook logo.png" width="35" height="35">
+            </a> </a>
+          </ul>
+        </div>
+        <div class="footer-logo">
+          <img src="img/archivo de el ultimo logo23.png" alt="Logo de NYA">
+        </div>
+        <div class="footer-donate">
+          <h3>Donaciones</h3>
+          <p>Ayúdanos a hacer el bien. ¡Tu donación importa!</p>
+          <button class="btn-donate" onclick="redirigirADonaciones()">Donar Ahora</button>
+          <script>
+            function redirigirADonaciones() {
+              window.location.href = 'donaciones.html';
+            }
+
+          </script>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 FUNDACIÓN NYA. Todos los derechos reservados.</p>
+      </div>
+  </body>
+
+</html>

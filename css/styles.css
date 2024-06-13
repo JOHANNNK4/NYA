@@ -1,0 +1,306 @@
+.header {
+  display: flex;
+  
+  background-color: aquamarine;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  scale: 100%;
+}
+
+.logo img {
+  display: flex;
+  block-size: 120px;
+  align-self: center;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  
+}
+
+
+.navbar-nav .nav-link {
+  margin-inline-end: 10px;
+}
+
+
+.nav-item {
+  margin: 5px;
+  border: 2px solid #89a1b8;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+}
+
+.nav-item:hover {
+  background-color: #4f6377;
+  color: #fff;
+}
+.mission-vision-box {
+  transition: transform 0.3s;
+}
+
+.mission-vision-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+   footer {
+    background-color: #22314a;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-logo img {
+    max-inline-size: 200px; 
+    display: block;
+    margin: 0 auto; 
+  }
+  .footer-info, .footer-social, .footer-donate {
+    flex: 1;
+    text-align: start;
+    margin: 10px;
+    color: #fff;
+  }
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-social li {
+    margin-block-end: 5px;
+  }
+  .footer-social a {
+    display: inline-block; 
+    margin-inline-end: 10px; 
+  }
+  .footer-donate {
+    text-align: center; 
+  }
+  .footer-donate button {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .footer-donate button:hover {
+    background-color: #0056b3; 
+  }
+  .footer-bottom {
+    background-color: #333; 
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .img-fluid {
+    max-inline-size: 100%;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  header {
+    background-color: #f8f8f8;
+  }
+  .navbar {
+    justify-content: center;
+    
+  }
+  .navbar a {
+    color: #333;
+  }
+  .card {
+    inline-size: 18rem;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-block-start: 20px;
+    
+    
+   
+  }
+  .form-group {
+    margin-block-end: 15px;
+  }
+  label {
+    font-weight: bold;
+  }
+  .btn-primary {
+    background-color: #007BFF;
+    border: none;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0; 
+  }
+  header {
+    background-color: #f8f8f8;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .navbar a {
+    color: #333;
+  }
+  .card {
+    font-family: 'TUI FONT NAME', sans-serif; 
+    inline-size: 18rem;
+    padding: 20px;
+    border: 8px solid #0c63d6;
+    border-radius: 20px;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+  }
+  .form-group {
+    margin-block-end: 15px;
+  }
+  label {
+    font-weight: bold;
+  }
+  .btn-primary {
+    background-color: #007BFF;
+    border: none;
+    justify-self: center;
+    transition: background-color 0.3s ease; 
+  }
+  .btn-primary:hover {
+    background-color: #0056b3; 
+  }
+  .map-container {
+    margin-block-start: 40px;
+    padding: 0; 
+    border: none; 
+  }
+  .card2{
+    background-color: #ddd;
+    margin-block-start: 20px;
+    
+    
+   
+  }
+  
+  .test {
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.test {
+  text-align: center; 
+}
+
+.test img {
+  margin-block-start: 20px;
+    block-size: 100%; 
+  inline-size: 95%; 
+  border-radius: 90px;
+  margin-block-end: 20px;
+}
+
+.centered-image {
+  max-inline-size: 25%; 
+  block-size: auto;
+}
+.small-and-stretched {
+  max-inline-size: 100px; 
+  block-size: auto;
+  inline-size: 100%; 
+}
+.test {
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.test {
+  text-align: center; 
+}
+
+.test img {
+  margin-block-start: 20px;
+    block-size: 100%; 
+  inline-size: 95%; 
+  border-radius: 90px;
+  margin-block-end: 20px;
+}
+
+.centered-image {
+  max-inline-size: 25%; 
+  block-size: auto;
+}
+.small-and-stretched {
+  max-inline-size: 100px; 
+  block-size: auto;
+  inline-size: 100%; 
+}
+.footer-social ul a img {
+  transition: transform 0.3s; /* Agregamos una transición para suavizar el efecto de desplazamiento */
+}
+
+.footer-social ul a img:hover {
+  transform: translate(0, -5px); /* Aplicamos un desplazamiento vertical cuando se hace hover en la imagen */
+}
+#mapid {
+  border: 10px solid #22314a;
+  border-radius: 2%;
+}
+.card {
+font-family: 'TUI FONT NAME', sans-serif; 
+
+inline-size: 18rem;
+padding: 20px;
+border: 8px solid #22314a;
+border-radius: 20px;
+margin-block-start: 20px;
+margin-block-end: 20px;
+background-color: #22314a;
+color: white;
+
+}
+.navbar-nav .nav-link {
+  color: rgb(7, 7, 7);
+  /* Cambia el color del texto del menú aquí */
+}
+
+.navbar {
+  background-color: transparent;
+  /* Hacer que el fondo del menú sea transparente */
+}
+
+.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Cambia el fondo del botón del menú desplegable */
+}
+
+.navbar-nav .nav-link {
+  color: rgb(7, 7, 7);
+  /* Cambia el color del texto del menú aquí */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000000;
+  /* Cambia el color del texto al hacer hover en el menú aquí */
+}
+
+.navbar {
+  background-image: url('img/fondo\ blureado.png');
+  /* Agrega el GIF como fondo del menú */
+  background-size: cover;
+  /* Ajusta el tamaño del fondo */
+}
+
+
