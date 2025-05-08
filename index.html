@@ -34,35 +34,9 @@
     color: white;
   }
 
-  .map-container {
-    margin-block-start: 90px;
-    padding: 0;
-    border: none;
-  }
-
-  .navbar-nav .nav-link {
-    color: rgb(7, 7, 7);
-    /* Cambia el color del texto del menú aquí */
-  }
-
   .navbar {
     background-color: transparent;
     /* Hacer que el fondo del menú sea transparente */
-  }
-
-  .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.5);
-    /* Cambia el fondo del botón del menú desplegable */
-  }
-
-  .navbar-nav .nav-link {
-    color: rgb(7, 7, 7);
-    /* Cambia el color del texto del menú aquí */
-  }
-
-  .navbar-nav .nav-link:hover {
-    color: #000000;
-    /* Cambia el color del texto al hacer hover en el menú aquí */
   }
 
   .navbar {
@@ -72,25 +46,10 @@
     /* Ajusta el tamaño del fondo */
   }
 
-  /* Hacer que la imagen del banner sea responsive */
-  .test img {
-    block-size: auto;
-  }
 
-  /* Estilos CSS para el formulario */
-  .card {
-    font-family: 'TUI FONT NAME', sans-serif;
-    max-inline-size: 100%;
-    padding: 20px;
-    border: 8px solid#e2e2e2;
-    border-radius: 20px;
-    margin-block-start: 20px;
-    margin-block-end: 20px;
-    background-color: #084cac;
-    color: white;
-  }
 
   .card {
+    /* Control del card que contiene mision y vision */
     font-family: 'TUI FONT NAME', sans-serif;
     max-inline-size: 100%;
     padding: 20px;
@@ -102,7 +61,8 @@
     color: white;
   }
 
-  .card222 {
+  .Card_Donacion_Colaboracion {
+    /* Card de colaboracion y donacion */
     font-family: 'TUI FONT NAME', sans-serif;
     max-inline-size: 100%;
     padding: 20px;
@@ -114,20 +74,8 @@
     color: white;
   }
 
-  /* Asegurarse de que el mapa sea responsive */
-  .map-container {
-    margin-block-start: 90px;
-    padding: 0;
-    border: none;
-  }
-
-  #mapid {
-    inline-size: 100%;
-    block-size: 325px;
-    margin-block-end: 60px;
-  }
-
   .row {
+    /* Control de bordes del card que contiene mision y vision */
     font-family: 'TUI FONT NAME', sans-serif;
     max-inline-size: 130%;
     padding: 20px;
@@ -144,6 +92,7 @@
 
 
   .btn-donate2 {
+    /* Estilos de los botones del card de donar y colaboracion*/
     background-color: rgb(110, 184, 206);
     color: #fff;
     padding: 10px 20px;
@@ -154,10 +103,12 @@
   }
 
   .btn-donate2:hover {
+    /* Animacion de los botones del card de donar y colaboracion */
     animation: colorChange 5s infinite;
   }
 
   @keyframes colorChange {
+     /* Animacion cambio de color de los botones del card de donar y colaboracion */
     0% {
       background-color: rgb(110, 184, 206);
     }
@@ -180,8 +131,9 @@
   }
 
   .video-container {
+    /* Control de bordes del video container, tamaño etc */
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 51%;
     /* 9:16 aspect ratio */
     height: 0;
     overflow: hidden;
@@ -342,7 +294,7 @@
 
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <div class="card222" style="width: 100%; margin-bottom: 20px; inline-size: 30rem">
+        <div class="Card_Donacion_Colaboracion" style="width: 100%; margin-bottom: 20px; inline-size: 30rem">
           <img class="card-img-top" src="img/Agregar un título5.png" alt="Card image cap">
           <div class="card-body text-center d-flex align-items-center justify-content-center">
             <button class="btn btn-donate2 btn-lg" onclick="redirigirADonaciones()">Forma Parte de Nosotros</button>
@@ -351,7 +303,7 @@
       </div>
 
       <div class="col-md-6">
-        <div class="card222" style="width: 100%; margin-bottom: 20px;margin-right: 20px; inline-size: 30rem">
+        <div class="Card_Donacion_Colaboracion" style="width: 100%; margin-bottom: 20px;margin-right: 20px; inline-size: 30rem">
           <img class="card-img-top" src="img/apoyo bienvenido.png" alt="Card image cap">
           <div class="card-body text-center d-flex flex-column align-items-center">
             <p class="card-text text-dark">

@@ -275,7 +275,10 @@ color: white;
   color: rgb(7, 7, 7);
   /* Cambia el color del texto del menú aquí */
 }
-
+.navbar-nav .nav-link {
+  color: rgb(7, 7, 7);
+  /* Cambia el color del texto del menú aquí */
+}
 .navbar {
   background-color: transparent;
   /* Hacer que el fondo del menú sea transparente */
