@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Componentes específicos */
+/* CSS Actualizado */
+/* Estilos generales de la sección */
+.mission-container {
+  border-color: #084cac !important; /* Usamos !important solo para sobrescribir Bootstrap */
+}
+
+.mission-row {
+  background-color: #084cac;
+  border: 8px solid #084cac;
+  border-radius: 90px;
+}
+
+.mission-column {
+  background-color: #084cac;
+}
+
+/* Tarjetas específicas */
+.mission-card {
+  width: 100%;
+  max-width: 90rem; /* Mejor práctica que inline-size */
+  margin-bottom: 20px;
+  background-color: #084cac !important; /* Necesario para sobrescribir Bootstrap */
+}
+
+/* Texto */
+.mission-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem; /* Mejor que "large" */
+  line-height: 1.6;
+ color : #fff;
+}
+
+
+.navbar {
+  background-image: url('../img/fondo blureado.png');
+  background-size: cover;
+  background-color: transparent;
+}
+
+/* CSS Mejorado */
+.donation-section {
+  margin: 4rem 0;
+}
+
+.Card_Donacion_Colaboracion {
+  font-family: 'TUI FONT NAME', sans-serif;
+  padding: 2rem;
+  border: 8px solid #e2e2e2;
+  border-radius: 20px;
+  background-color: #e2e2e2;
+  height: 100%; /* Asegura igual altura */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.donation-card {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto 2rem;
+}
+
+.donation-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem !important;
+}
+
+.btn-donate2 {
+  width: fit-content;
+  margin-top: auto;
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+  .donation-column {
+    margin-bottom: 2rem;
+  }
+  
+  .Card_Donacion_Colaboracion {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    max-width: 200px !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.row {
+  font-family: 'TUI FONT NAME', sans-serif;
+  max-inline-size: 130%;
+  padding: 20px;
+
+ 
+  
+}
+
+.btn-donate2 {
+  background-color: rgb(110, 184, 206);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-donate2:hover {
+  animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+  0% { background-color: rgb(110, 184, 206); }
+  25% { background-color: #66ff66; }
+  50% { background-color: #1e90ff; }
+  75% { background-color: #ff69b4; }
+  100% { background-color: #ff6347; }
+}
+
+
+section {
+  border-radius: 80px;
+}
+
+.ban {
+  background-color: #22314a;
+  padding: 30px;
+  border-radius: 20px;
+  inline-size: fit-content;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+
